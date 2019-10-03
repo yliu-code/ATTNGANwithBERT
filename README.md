@@ -1,7 +1,8 @@
 # AttnGAN
 
-Pytorch implementation for reproducing AttnGAN results in the paper [AttnGAN: Fine-Grained Text to Image Generation
+Pytorch implementation for improving AttnGAN results in the paper [AttnGAN: Fine-Grained Text to Image Generation
 with Attentional Generative Adversarial Networks](http://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_AttnGAN_Fine-Grained_Text_CVPR_2018_paper.pdf) by Tao Xu, Pengchuan Zhang, Qiuyuan Huang, Han Zhang, Zhe Gan, Xiaolei Huang, Xiaodong He.
+by using BERT transformer
 
 <img src="framework.png" width="900px" height="350px"/>
 
@@ -72,8 +73,8 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 If you find AttnGAN useful in your research, please consider citing:
 
 ```
-@article{Sean,
-  author    = {Sean Liu, Tao Xu, Pengchuan Zhang, Qiuyuan Huang, Han Zhang, Zhe Gan, Xiaolei Huang, Xiaodong He},
+@article{
+  author    = {Tao Xu, Pengchuan Zhang, Qiuyuan Huang, Han Zhang, Zhe Gan, Xiaolei Huang, Xiaodong He},
   title     = {AttnGAN: Fine-Grained Text to Image Generation with Attentional Generative Adversarial Networks},
   Year = {2018},
   booktitle = {{CVPR}}
