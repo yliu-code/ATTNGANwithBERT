@@ -1,13 +1,13 @@
 # AttnGAN
 
 Pytorch implementation for reproducing AttnGAN results in the paper [AttnGAN: Fine-Grained Text to Image Generation
-with Attentional Generative Adversarial Networks](http://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_AttnGAN_Fine-Grained_Text_CVPR_2018_paper.pdf) by Tao Xu, Pengchuan Zhang, Qiuyuan Huang, Han Zhang, Zhe Gan, Xiaolei Huang, Xiaodong He. (This work was performed when Tao was an intern with Microsoft Research). 
+with Attentional Generative Adversarial Networks](http://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_AttnGAN_Fine-Grained_Text_CVPR_2018_paper.pdf) by Tao Xu, Pengchuan Zhang, Qiuyuan Huang, Han Zhang, Zhe Gan, Xiaolei Huang, Xiaodong He.
 
 <img src="framework.png" width="900px" height="350px"/>
 
 
 ### Dependencies
-python 2.7
+python 3
 
 Pytorch
 
@@ -30,9 +30,7 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 
 **Training**
-- Pre-train DAMSM models:
-  - For bird dataset: `python pretrain_DAMSM.py --cfg cfg/DAMSM/bird.yml --gpu 0`
-  - For coco dataset: `python pretrain_DAMSM.py --cfg cfg/DAMSM/coco.yml --gpu 1`
+- Train Bert model
  
 - Train AttnGAN models:
   - For bird dataset: `python main.py --cfg cfg/bird_attn2.yml --gpu 2`
@@ -42,9 +40,7 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 
 
 
-**Pretrained Model**
-- [DAMSM for bird](https://drive.google.com/open?id=1GNUKjVeyWYBJ8hEU-yrfYQpDOkxEyP3V). Download and save it to `DAMSMencoders/`
-- [DAMSM for coco](https://drive.google.com/open?id=1zIrXCE9F6yfbEJIbNP5-YrEe2pZcPSGJ). Download and save it to `DAMSMencoders/`
+**Pretrained Model**`
 - [AttnGAN for bird](https://drive.google.com/open?id=1lqNG75suOuR_8gjoEPYNp8VyT_ufPPig). Download and save it to `models/`
 - [AttnGAN for coco](https://drive.google.com/open?id=1i9Xkg9nU74RAvkcqKE-rJYhjvzKAMnCi). Download and save it to `models/`
 
@@ -76,8 +72,8 @@ In addition, please add the project folder to PYTHONPATH and `pip install` the f
 If you find AttnGAN useful in your research, please consider citing:
 
 ```
-@article{Tao18attngan,
-  author    = {Tao Xu, Pengchuan Zhang, Qiuyuan Huang, Han Zhang, Zhe Gan, Xiaolei Huang, Xiaodong He},
+@article{Sean,
+  author    = {Sean Liu, Tao Xu, Pengchuan Zhang, Qiuyuan Huang, Han Zhang, Zhe Gan, Xiaolei Huang, Xiaodong He},
   title     = {AttnGAN: Fine-Grained Text to Image Generation with Attentional Generative Adversarial Networks},
   Year = {2018},
   booktitle = {{CVPR}}
